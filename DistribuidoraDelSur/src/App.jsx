@@ -2,16 +2,31 @@
 import './App.css'
 import { Camion } from './assets/Camion'
 import { Content } from './assets/Content'
+import { Search }  from './assets/Search'
+
 
 function App() {
 
   
   return (
+    
     <>
-      <nav> <Camion/> </nav>
+  
+      <header >
+        <section id='camion-container'> <Camion/></section>
+      </header>
       
-      <Content/>
-      
+      <nav>  
+        <Search id="search" />
+      </nav>
+
+      <main>
+          <Content/>
+
+      </main>
+
+      <footer>
+      </footer>
     </>
   )
 }

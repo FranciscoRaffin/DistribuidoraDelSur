@@ -1,4 +1,4 @@
-import './Card.css'
+import "./Card.css"
 import PropTypes from 'prop-types';
 
 export function Card ({nombre, marca, precio}) {
