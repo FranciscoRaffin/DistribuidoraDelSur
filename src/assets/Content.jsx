@@ -13,6 +13,7 @@ export function Content() {
 
        <Card nombre="Producto 22" marca="Marca 23" precio="300" />
        <Card nombre="FJYSEI" marca="Marca DF23" precio="300" />
+       <Card nombre="TEST" marca="TEST DF23" precio="3000" />
 
        </div>
     );
