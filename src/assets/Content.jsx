@@ -18,6 +18,7 @@ export function Content() {
         fetchData();
     }, []);
 
+    
     return (
         <div id="contenido">
             {productosData.map((producto, index) => (
