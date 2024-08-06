@@ -10,9 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@google-cloud/local-auth": "^3.0.1",
+    "@google-cloud/local-auth": "^2.1.0",
     "fs": "^0.0.1-security",
-    "googleapis": "^140.0.1",
+    "googleapis": "^105.0.0",
     "path": "^0.12.7",
     "process": "^0.11.10",
     "prop-types": "^15.8.1",
