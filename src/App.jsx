@@ -4,6 +4,7 @@ import { Camion } from './assets/Camion'
 import { Content } from './assets/Content'
 import { Search }  from './assets/Search'
 import { BrandsFilters } from './assets/BrandsFilters'
+import { TagsFilter } from './assets/TagsFilter'
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
       <nav>  
         {/*<Search id="search" />*/}
         <BrandsFilters id="brand-filter" />
-        {/*<TagsFilter/>*/}
+        <TagsFilter/>
 
       </nav>
 
