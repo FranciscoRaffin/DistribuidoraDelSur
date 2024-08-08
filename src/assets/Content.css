@@ -5,11 +5,14 @@
     align-items: center;
     padding-top: 10px;
     grid-template-columns: repeat(2, 0fr);
-    gap: 13px;
+    gap: 30px;
+    margin-top: 20px;
+    background-color: rgba(210, 230, 248, 0.645);
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 .card {
     
-    margin-top: 20px;
   
 }
