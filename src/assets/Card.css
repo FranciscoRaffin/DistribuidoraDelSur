@@ -1,7 +1,7 @@
 .card {
-    width: 160px;
+    width: 155px;
     height: 280px;
-    padding: .8em;
+    padding: .6em;
     background: #fcfcfc;
     position: relative;
     overflow: visible;
@@ -9,8 +9,8 @@
    }
    
    .card-img-container{
-    width: 160px;
-    height: 160px;
+    width: 155px;
+    height: 155px;
     display: flex;
     justify-content: center;
     background-color: #ffffff;
@@ -21,8 +21,8 @@
 
    .card-img {
     background-color: #ffffff;
-    max-width: 160px;
-    max-height: 160px;
+    max-width: 155px;
+    max-height: 155px;
 
     border-radius: .2rem;
     transition: .3s ease;
