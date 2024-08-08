@@ -6,7 +6,7 @@
 }
 
 #camion-container{
-    background-color: #ededed;
+    background-color: #f2f0f0;
     padding: 7px;
     display: flex;
     
@@ -15,14 +15,17 @@
 }
 
 nav {
-    background-color: rgba(93, 109, 112, 0.471);
+    background-color: rgba(138, 14, 136, 0.477);
     justify-content: center;
-    display: flex;
+    display: grid;
     box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.536);
-
+    padding: 7px;
     
 }
   
+#brand-filter{
+  padding: 100px; //VER
+}
 
 #search {
 
