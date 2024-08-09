@@ -1,5 +1,5 @@
-import './Camion.css'
-import logo from './imagenes/logo.png' 
+import './../styles/Camion.css'
+import logo from './../imagenes/logo.png' 
 
 export function Camion() {
           return (

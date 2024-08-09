@@ -1,5 +1,5 @@
-import {marcaImagen} from './Branding';
-import './Branding.css'
+import {marcaImagen} from '../refs';
+import './../styles/Branding.css'
 
 
 export function BrandsFilters() {

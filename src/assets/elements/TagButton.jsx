@@ -1,4 +1,4 @@
-import './TagButton.css';
+import './../styles/TagButton.css';
 import PropTypes from 'prop-types';
 
 export function TagButton({ children }) {

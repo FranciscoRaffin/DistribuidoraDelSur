@@ -1,5 +1,6 @@
 import { TagButton } from "./TagButton";
-const TAGS = ["Gomita", "Caramelo", "Masticable", "Oblea", "Pastilla"]
+import {TAGS} from "./../refs";
+
 
 export function TagsFilter() {
     return (

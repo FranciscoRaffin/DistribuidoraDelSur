@@ -1,10 +1,9 @@
 //import { useState } from 'react'
 import './App.css'
-import { Camion } from './assets/Camion'
-import { Content } from './assets/Content'
-import { Search }  from './assets/Search'
-import { BrandsFilters } from './assets/BrandsFilters'
-import { TagsFilter } from './assets/TagsFilter'
+import { Camion } from './assets/elements/Camion'
+import { Content } from './assets/elements/Content'
+import { BrandsFilters } from './assets/elements/BrandsFilters'
+import { TagsFilter } from './assets/elements/TagsFilter'
 
 
 function App() {
