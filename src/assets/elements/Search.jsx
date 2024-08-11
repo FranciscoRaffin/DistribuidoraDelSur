@@ -1,4 +1,4 @@
-import './Search.css';
+import './../styles/Search.css';
 
 export function Search() {
     return (

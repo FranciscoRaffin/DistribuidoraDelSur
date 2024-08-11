@@ -1,0 +1,48 @@
+.brand-icon {
+    max-width: 55px;
+    max-height: 55px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block; 
+    padding: 3px;
+    border-radius: 7px;
+    transition: transform 0.3s ease; /* Añadir transición suave para la escala */
+}
+
+#brand-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Ajusta este valor para controlar el espacio entre los elementos */
+    background-color: rgb(255, 255, 255); 
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.536);
+}
+
+#tag-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.brand-icon.active {
+    transform: scale(1.33); 
+    
+    box-shadow: 0px 7px 12px rgba(0, 0, 0, 0.679);
+    border-radius: 20px;
+}
+
+
+#brand-container, #tag-container {
+    padding: 0; /* Asegúrate de que el padding no esté desalineando los elementos */
+    margin: 0 auto; /* Centrará el contenedor dentro de su padre */
+}
+
+#tag-container {
+    padding-top: 10px;
+}
+
+.brand-icon, .button {
+    margin: 0; /* Remover márgenes extras */
+    padding: 5px; /* Ajusta el padding según sea necesario */
+}
