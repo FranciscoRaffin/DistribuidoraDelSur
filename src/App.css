@@ -1,30 +1,26 @@
 :root {
-
   background-color: #ffffff;
-
-
 }
 
 #camion-container{
     background-color: #f2f0f0;
     padding: 7px;
     display: flex;
-    
     justify-content: center;
 
 }
 
 nav {
-    background-color: rgba(138, 14, 136, 0.477);
+    background-color: rgba(60, 92, 126, 0.83);
     justify-content: center;
     display: grid;
     box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.536);
-    padding: 7px;
+    padding: 13px;
     
 }
-  
+
 #brand-filter{
-  padding: 100px; 
+   
 }
 
 #search {

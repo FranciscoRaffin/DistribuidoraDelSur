@@ -14,12 +14,13 @@ function App() {
     <>
   
       <header >
-        <section id='camion-container'> <Camion/></section>
+        <section id='camion-container'> {/*<Camion/>*/}</section>
+
       </header>
       
       <nav>  
         {/*<Search id="search" />*/}
-        <BrandsFilters id="brand-filter" />
+        <BrandsFilters/>
         <TagsFilter/>
 
       </nav>
