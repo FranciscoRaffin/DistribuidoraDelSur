@@ -2,10 +2,11 @@ import './../styles/Content.css';
 import { Card } from './Card';
 import { useState, useEffect } from 'react';
 import { productos as obtenerProductos } from '../../logic/Productos';
-import {marcaImagen} from '../refs';
-import {IMAGEN_DEFAULT} from "./../refs";
+import { marcaImagen } from '../refs';
+import { IMAGEN_DEFAULT } from "./../refs";
 
-export function Content() {
+// eslint-disable-next-line react/prop-types
+export function Content({ selectedBrand, selectedTag }) {
     const [productosData, setProductosData] = useState([]);
 
     useEffect(() => {
@@ -20,11 +21,16 @@ export function Content() {
         fetchData();
     }, []);
 
-    
+    // Filtrado de productos por marca y tag (tipo de producto)
+    const filteredProductos = productosData.filter((producto) => {
+        const matchesBrand = selectedBrand ? producto.marca === selectedBrand : true;
+        const matchesTag = selectedTag ? producto.tipo === selectedTag : true; // Asumiendo que "tipo" es el campo correcto
+        return matchesBrand && matchesTag;
+    });
+
     return (
         <div id="contenido">
-            {productosData.map((producto, index) => (
-                
+            {filteredProductos.map((producto, index) => (
                 <Card 
                     key={index}
                     nombre={producto.nombre} 
@@ -36,6 +42,3 @@ export function Content() {
         </div>
     );
 }
-
-
-

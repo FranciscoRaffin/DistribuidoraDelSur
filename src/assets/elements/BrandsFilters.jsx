@@ -2,22 +2,20 @@ import { useState } from 'react';
 import { marcaImagen } from '../refs';
 import './../styles/Branding.css';
 
-export function BrandsFilters() {
-    const [selectedBrand, setSelectedBrand] = useState(null);
+// eslint-disable-next-line react/prop-types
+export function BrandsFilters({ setSelectedBrand }) {
+    const [selectedBrand, setLocalSelectedBrand] = useState(null);
 
     const handleClick = (marca) => {
-        if (selectedBrand === marca) {
-            setSelectedBrand(null); // Desactiva la marca si se hace clic nuevamente
-        } else {
-            setSelectedBrand(marca); // Activa la nueva marca
-        }
+        const newBrand = selectedBrand === marca ? null : marca;
+        setLocalSelectedBrand(newBrand);
+        setSelectedBrand(newBrand); // Actualiza la marca seleccionada en el componente padre
     };
 
     return (
         <>
             <section id='brand-container'>
                 {Object.entries(marcaImagen).map(([marca, imagenURL]) => (
-                     
                     <img 
                         className={`brand-icon ${selectedBrand === marca ? 'active' : ''}`} 
                         key={marca} 
@@ -25,7 +23,6 @@ export function BrandsFilters() {
                         alt={marca} 
                         onClick={() => handleClick(marca)}
                     />
-                    
                 ))}
             </section>
         </>
