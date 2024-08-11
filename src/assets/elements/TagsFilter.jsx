@@ -1,31 +1,27 @@
-import { TagButton } from "./TagButton";
 import { TAGS } from "./../refs";
-import { useState } from "react";
 
-export function TagsFilter() {
-    const [activeTag, setActiveTag] = useState(null);
 
-    const handleClick = (tag) => {
-        if (activeTag === tag) {
-            setActiveTag(null); // Desactiva el botón si se hace clic nuevamente
+// eslint-disable-next-line react/prop-types
+export function TagsFilter({ selectedTag, setSelectedTag }) {
+    const handleTagClick = (tag) => {
+        if (selectedTag === tag) {
+            setSelectedTag(null); // Desactiva el tag si se hace clic nuevamente
         } else {
-            setActiveTag(tag); // Activa el nuevo botón
+            setSelectedTag(tag); // Activa el nuevo tag
         }
     };
 
     return (
-        <>
         <section id='tag-container'>
             {TAGS.map((tag) => (
-                <TagButton 
+                <button 
                     key={tag} 
-                    isActive={activeTag === tag} 
-                    onClick={() => handleClick(tag)}
+                    className={`button ${selectedTag === tag ? 'active' : ''}`}
+                    onClick={() => handleTagClick(tag)}
                 >
                     {tag}
-                </TagButton>
-            )) }
+                </button>
+            ))}
         </section>
-        </>
     );
 }
