@@ -33,6 +33,7 @@ export function Content({ selectedBrand, selectedTag }) {
             {filteredProductos.map((producto, index) => (
                 <Card 
                     key={index}
+                    id={producto.id}
                     nombre={producto.nombre} 
                     marca={producto.marca} 
                     precio={parseInt(producto.precio_final)}

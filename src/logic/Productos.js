@@ -7,8 +7,8 @@ export async function productos() {
             csv.split("\n")
                 .slice(1)
                 .map((row) => {
-                    const [marca, tipo, nombre, img, precio_lista, precio_final] = row.split(",");
-                    return { marca, tipo, nombre, img, precio_lista, precio_final};
+                    const [id, marca, tipo, nombre, img, precio_lista, precio_final] = row.split(",");
+                    return {id, marca, tipo, nombre, img, precio_lista, precio_final};
                 })
         );
 

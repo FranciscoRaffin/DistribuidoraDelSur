@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     padding-top: 10px;
+    padding-bottom: 20px;
     grid-template-columns: repeat(2, 0fr);
     gap: 10px;
     margin-top: 20px;
@@ -14,7 +15,3 @@
 
 }
 
-.card {
-    
-  
-}
