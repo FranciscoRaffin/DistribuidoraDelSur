@@ -1,7 +1,8 @@
 import "./../styles/Card.css";
 import PropTypes from 'prop-types';
 
-export function Card ({nombre, marca, precio, img}) {
+// eslint-disable-next-line react/prop-types
+export function Card ({id, nombre, marca, precio, img}) {
     return (
         <div className="card">
             <div className="card-img-container" >
@@ -9,6 +10,7 @@ export function Card ({nombre, marca, precio, img}) {
             </div>
             <div className="card-info">
                 <p className="text-title">{nombre}</p>
+                <p className="id">ID: {id}</p>
                 <p className="text-body">{marca}</p>
             </div>
             <div className="card-footer">
