@@ -5,6 +5,7 @@ import { Camion } from './assets/elements/Camion'
 import { Content } from './assets/elements/Content'
 import { BrandsFilters } from './assets/elements/BrandsFilters'
 import { TagsFilter } from './assets/elements/TagsFilter'
+import { Search } from './assets/elements/Search'
 
 
 function App() {
@@ -16,12 +17,12 @@ function App() {
     <>
   
       <header >
-        <section id='camion-container'> <Camion/></section>
+        {/*<section id='camion-container'> <Camion/></section> */}
 
       </header>
       
       <nav>  
-        {/*<Search id="search" />*/}
+        <div id="search-container"><Search id="search" /></div>
         <BrandsFilters setSelectedBrand={setSelectedBrand} />
         <TagsFilter selectedTag={selectedTag} setSelectedTag={setSelectedTag} />
 
