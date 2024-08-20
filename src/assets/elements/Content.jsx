@@ -29,7 +29,7 @@ export function Content({ selectedBrand, selectedTag }) {
     });
 
     return (
-        <div id="contenido">
+        <div className='container' id="contenido">
             {filteredProductos.map((producto, index) => (
                 <Card 
                     key={index}

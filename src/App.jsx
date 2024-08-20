@@ -29,7 +29,7 @@ function App() {
       </nav>
 
       <main>
-      <Content selectedBrand={selectedBrand} selectedTag={selectedTag} />
+      <Content  selectedBrand={selectedBrand} selectedTag={selectedTag} />
 
       </main>
 
