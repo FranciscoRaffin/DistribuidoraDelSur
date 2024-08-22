@@ -11,6 +11,7 @@ import { Search } from './assets/elements/Search'
 function App() {
   const [selectedBrand, setSelectedBrand] = useState(null);
   const [selectedTag, setSelectedTag] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
   
   return (
     
@@ -22,14 +23,17 @@ function App() {
       </header>
       
       <nav>  
-        <div id="search-container"><Search id="search" /></div>
+        <div id="search-container"><Search onSearch={setSearchTerm} /></div>
         <BrandsFilters setSelectedBrand={setSelectedBrand} />
         <TagsFilter selectedTag={selectedTag} setSelectedTag={setSelectedTag} />
 
       </nav>
 
       <main>
-      <Content  selectedBrand={selectedBrand} selectedTag={selectedTag} />
+      <Content  
+                      selectedBrand={selectedBrand} 
+                      selectedTag={selectedTag} 
+                      searchTerm={searchTerm} />
 
       </main>
 
