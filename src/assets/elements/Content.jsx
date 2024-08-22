@@ -5,8 +5,11 @@ import { productos as obtenerProductos } from '../../logic/Productos';
 import { marcaImagen } from '../refs';
 import { IMAGEN_DEFAULT } from "./../refs";
 
+
+
+
 // eslint-disable-next-line react/prop-types
-export function Content({ selectedBrand, selectedTag }) {
+export function Content({ selectedBrand, selectedTag, searchTerm }) {
     const [productosData, setProductosData] = useState([]);
 
     useEffect(() => {
@@ -21,11 +24,15 @@ export function Content({ selectedBrand, selectedTag }) {
         fetchData();
     }, []);
 
-    // Filtrado de productos por marca y tag (tipo de producto)
+    // Filtrado de productos por marca, tipo y búsqueda
     const filteredProductos = productosData.filter((producto) => {
         const matchesBrand = selectedBrand ? producto.marca === selectedBrand : true;
-        const matchesTag = selectedTag ? producto.tipo === selectedTag : true; // Asumiendo que "tipo" es el campo correcto
-        return matchesBrand && matchesTag;
+        const matchesTag = selectedTag ? producto.tipo === selectedTag : true;
+        const matchesSearchTerm = searchTerm
+            // eslint-disable-next-line react/prop-types
+            ? producto.nombre.toLowerCase().includes(searchTerm.toLowerCase()) || producto.id.includes(searchTerm)
+            : true;
+        return matchesBrand && matchesTag && matchesSearchTerm;
     });
 
     return (
