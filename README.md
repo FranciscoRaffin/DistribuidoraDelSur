@@ -7,16 +7,18 @@ Catálogo web, desarrollado con Vite y React, que utiliza Google Sheets como fue
 
 # Características
 <ul>
-Visualización de productos con imagen, precio e ID.
-Filtros por marcas y tipos de productos.
-Búsqueda de productos por nombre o ID.
-Datos de productos cargados dinámicamente desde una hoja de Google Sheets.
-Tecnologías Utilizadas
-Vite: Empaquetador rápido para desarrollo web.
-React: Librería de JavaScript para crear interfaces de usuario.
-Google Sheets API: Integración para obtener datos desde Google Sheets.
-<li>CSS3: Estilos personalizados y diseño responsivo.</li>
+  <li>Visualización de productos con imagen, precio e ID. </li>
+  <li>Filtros por marcas y tipos de productos.</li>
+  <li>Búsqueda de productos por nombre o ID.</li>
+  <li>Datos de productos cargados dinámicamente desde una hoja de Google Sheets.</li>
+</ul>
+# Tecnologías Utilizadas
 <ul>
+  <li>Vite: Empaquetador rápido para desarrollo web.</li>
+  <li>React: Librería de JavaScript para crear interfaces de usuario.</li>
+  <li>Google Sheets API: Integración para obtener datos desde Google Sheets.</li>
+  <li>CSS3: Estilos personalizados y diseño responsivo.</li>
+</ul>
 
 # Cómo Funciona
 El catálogo obtiene los datos directamente desde una hoja de Google Sheets, donde están organizados con columnas que incluyen ID, marca, tipo de producto, nombre, imagen y precios. La aplicación los muestra en un formato visual utilizando componentes de React.
