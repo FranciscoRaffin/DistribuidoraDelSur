@@ -1,6 +1,6 @@
 # Catálogo Web con React y Google Sheets
 
-Este es un proyecto de muestra para un catálogo web, desarrollado con Vite y React, que utiliza Google Sheets como fuente de datos de productos.
+Catálogo web, desarrollado con Vite y React, que utiliza Google Sheets como fuente de datos de productos.
 
 
 <img src="https://github.com/user-attachments/assets/c7bb91f3-749f-47ab-b303-dcb3b5e4e68f" alt="Main image" width="800"/> 
