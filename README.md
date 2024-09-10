@@ -3,8 +3,8 @@
 Catálogo web, desarrollado con Vite y React, que utiliza Google Sheets como fuente de datos de productos.
 
 
-<img src="https://github.com/user-attachments/assets/c7bb91f3-749f-47ab-b303-dcb3b5e4e68f" alt="Main image" width="800"/> 
-Página web: [Distribuidora del Sur] (https://distribuidora-del-sur.netlify.app/)
+<img src="https://github.com/user-attachments/assets/c7bb91f3-749f-47ab-b303-dcb3b5e4e68f" alt="Main image" width="800"/> </br>
+Página web: [Distribuidora del Sur](https://distribuidora-del-sur.netlify.app/)
 
 # Características
 <ul>
