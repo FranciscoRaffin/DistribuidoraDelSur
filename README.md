@@ -12,7 +12,9 @@ Catálogo web, desarrollado con Vite y React, que utiliza Google Sheets como fue
   <li>Búsqueda de productos por nombre o ID.</li>
   <li>Datos de productos cargados dinámicamente desde una hoja de Google Sheets.</li>
 </ul>
+
 # Tecnologías Utilizadas
+
 <ul>
   <li>Vite: Empaquetador rápido para desarrollo web.</li>
   <li>React: Librería de JavaScript para crear interfaces de usuario.</li>
