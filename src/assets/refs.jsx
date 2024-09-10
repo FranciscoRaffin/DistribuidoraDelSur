@@ -9,4 +9,4 @@ export let marcaImagen = {
     "Benevia":"https://glomarkint.com/wp-content/uploads/2022/01/Logo-Benevia-01.png"
 }
 
-export const IMAGEN_DEFAULT = "https://www.proclinic-products.com/build/static/default-product.30484205.png"
+export const IMAGEN_DEFAULT = "https://cuantillon.sa/wp-content/uploads/2024/05/img.png"
