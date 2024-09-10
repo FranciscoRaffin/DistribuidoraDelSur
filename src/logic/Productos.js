@@ -17,18 +17,3 @@ export async function productos() {
 
 }
 
-//
-//async function mostrarProductos() {
-//    const prods = await productos();
-//    prods.forEach((elemento) => {
-//        console.log(elemento.nombre);
-//        console.log(elemento.img);
-//        console.log(elemento.marca);
-//        console.log(elemento.precio_final);
-//        console.log(elemento.precio_lista);
-//        console.log(elemento.tipo);
-//    });
-//}
-//
-//// Llamar a la función para mostrar los productos
-//mostrarProductos();
